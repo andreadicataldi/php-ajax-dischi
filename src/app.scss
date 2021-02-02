@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #1e2d3b;
+  background: #282a2c;
   min-height: 100vh;
 }
 
@@ -19,7 +19,7 @@ body {
 header {
   width: 100%;
   height: 70px;
-  background: rgb(46, 58, 70);
+  background: rgb(0, 0, 0);
 }
 header img {
   height: 50px;
@@ -43,7 +43,7 @@ header img {
   padding: 20px;
   margin: 10px 20px;
   height: 360px;
-  background: rgb(46, 58, 70);
+  background: rgb(0, 0, 0);
   text-align: center;
 }
 
@@ -64,7 +64,7 @@ header img {
 }
 
 .cd span.year {
-  color: grey;
+  color: rgb(255, 255, 255);
 }
 
 #genre {

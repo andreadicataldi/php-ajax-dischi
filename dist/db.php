@@ -1,4 +1,4 @@
-<?
+<?php
 $albums = array(
   0 =>
   array(
@@ -43,7 +43,7 @@ $albums = array(
   5 =>
   array(
     'poster' => 'https://upload.wikimedia.org/wikipedia/en/9/97/Eric_Clapton_OMCOMR.jpg',
-    'title' => 'One more car, one more raider',
+    'title' => 'One more car, one more rider',
     'author' => 'Eric Clapton',
     'genre' => 'Rock',
     'year' => '2002',
@@ -76,8 +76,11 @@ $albums = array(
   array(
     'poster' => 'https://m.media-amazon.com/images/I/71K9CbNZPsL._SS500_.jpg',
     'title' => 'Bad',
-    'author' => 'Michael Jacjson',
+    'author' => 'Michael Jackson',
     'genre' => 'Pop',
     'year' => '1987',
   ),
 );
+
+/* header('Content-Type: application/json');
+echo json_encode($albums); */

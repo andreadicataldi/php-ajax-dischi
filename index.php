@@ -23,7 +23,6 @@ include __DIR__ . './dist/db.php'
     </header>
 
     <div class="cds-container container">
-      <!-- Disco ad esempio -->
 
       <?php
       foreach ($albums as $album => $value) { ?>
