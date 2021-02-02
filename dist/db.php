@@ -82,5 +82,7 @@ $albums = array(
   ),
 );
 
-/* header('Content-Type: application/json');
-echo json_encode($albums); */
+// Milestone 2 
+
+header('Content-Type: application/json');
+echo json_encode($albums);

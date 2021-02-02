@@ -1,7 +1,3 @@
-<?php
-include __DIR__ . './dist/db.php'
-?>
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -24,19 +20,17 @@ include __DIR__ . './dist/db.php'
 
     <div class="cds-container container">
 
-      <?php
-      foreach ($albums as $album => $value) { ?>
-        <div class="cd">
-          <img src="<?php echo $value['poster']; ?>" alt="<?php echo $value['title']; ?>" />
-          <h3><?php echo $value['title']; ?></h3>
-          <span class="author"><?php echo $value['author']; ?></span>
-          <span class="year"><?php echo $value['year']; ?></span>
-        </div>
-      <?php } ?>
+      <div class="cd" v-for="album in albums">
+        <img :src="album.poster" :alt="album.title" />
+        <h3>{{album.title}}</h3>
+        <span class="author">{{album.author}}</span>
+        <span class="year">{{album.year}}</span>
+      </div>
 
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js" integrity="sha512-otOZr2EcknK9a5aa3BbMR9XOjYKtxxscwyRHN6zmdXuRfJ5uApkHB7cz1laWk2g8RKLzV9qv/fl3RPwfCuoxHQ==" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   <script src="./dist/js/app.js" charset="utf-8"></script>
 </body>
 
