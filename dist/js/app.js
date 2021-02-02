@@ -7,23 +7,7 @@
   \********************/
 /***/ (() => {
 
-var app = new Vue({
-  el: "#app",
-  data: {
-    albums: [],
-    activeGenre: "all"
-  },
-  methods: {},
-  mounted: function mounted() {
-    var _this = this;
 
-    axios.get("https://flynn.boolean.careers/exercises/api/array/music").then(function (response) {
-      _this.albums = response.data.response;
-    })["catch"](function (error) {
-      alert("Errore" + error);
-    });
-  }
-});
 
 /***/ }),
 
