@@ -20,7 +20,7 @@ var app = new Vue({
     axios.get("dist/db.php").then(function (response) {
       _this.albums = response.data;
     })["catch"](function (error) {
-      alert("Errore" + error);
+      alert(error);
     });
   }
 });

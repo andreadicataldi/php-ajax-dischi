@@ -12,7 +12,7 @@ let app = new Vue({
         this.albums = response.data;
       })
       .catch((error) => {
-        alert("Errore" + error);
+        alert(error);
       });
   },
 });

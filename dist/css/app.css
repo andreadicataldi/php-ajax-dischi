@@ -10,21 +10,19 @@ body {
   min-height: 100vh;
 }
 
-.container {
-  width: 1070px;
-  height: 100%;
-  margin: 0 auto;
-}
-
 header {
   width: 100%;
   height: 70px;
   background: black;
 }
-
 header img {
   height: 50px;
   margin-top: 10px;
+}
+header .container {
+  width: 1070px;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .cds-container {
@@ -34,8 +32,7 @@ header img {
   flex-wrap: wrap;
   padding: 100px 0;
 }
-
-.cd {
+.cds-container .cd {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -47,28 +44,19 @@ header img {
   background: black;
   text-align: center;
 }
-
-.cd img {
-  max-width: 100%;
-}
-
-.cd h3 {
+.cds-container .cd h3 {
   margin: 20px 0;
-  color: white;
+  color: #ffffff;
   font-size: 22px;
   text-transform: uppercase;
 }
-
-.cd span.author {
+.cds-container .cd img {
+  max-width: 100%;
+}
+.cds-container .cd span.author {
   color: grey;
   font-size: 20px;
 }
-
-.cd span.year {
-  color: white;
-}
-
-#genre {
-  float: right;
-  margin-top: 25px;
+.cds-container .cd span.year {
+  color: #ffffff;
 }
